@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ruda:wght@400..900&display=swap');
+
+/* General Styles */
+/* body {
+    background-color: #0D0D0D;
+    color: white;
+    margin: 0;
+    padding: 0;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background: #0f0f13;
+    /* linear-gradient(to bottom, #0f0f13, #111116) */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* a.navbar-brand {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+} */
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem; /* Adjust these values to reduce spacing */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+#items {
+    width: 90%!important;
+}
+
+#uv-form {
+    filter: drop-shadow(0px 0px 10px rgb(8, 148, 255));
+    /* color: white; */
+}
+
+#uv-address::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 20em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(50) 1s 1 normal both,
+             blinkTextCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+
+  to{width: 20em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0, 132, 255, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+#pagego {
+    margin-bottom: 10px;
+}

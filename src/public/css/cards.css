@@ -1,0 +1,56 @@
+#card {
+    position: relative; /* Relative positioning to contain absolutely positioned elements */
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the top */
+    padding: 10px;
+    background-color:  #14141a; /* Background color of the card */
+    border: 1px solid #1d1818; /* Border styling */
+    border-radius: 5px; /* Rounded corners for the card */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    text-align: left; /* Align text to the left */
+}
+
+/* position: relative;
+display: flex; 
+align-items: flex-start;
+position: relative;
+border-radius: 12px;
+padding: 100px 150px;
+background-color: #14141a;
+color: white;
+transition: transform 0.3s ease;
+border: 1px solid #1d1818;
+text-align: left;  */
+
+
+#card:hover {
+    transform: translateY(-4px); /* Move up 2 pixels on hover */
+}
+
+#card .image-box {
+    width: calc(1/8 * 100%); /* 1/8th of the card's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for the image box */
+    overflow: hidden; /* Hide overflow to respect border-radius */
+    margin-right: 10px; /* Space between the image box and title */
+}
+  
+  /* Image inside the box */
+#card .image-box img {
+    width: 100%; /* Make the image fill the box */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+
+/* Title text styling */
+#card .c-title {
+    display: flex;
+    flex-direction: column; /* Stack title text vertically */
+    justify-content: flex-start; /* Align title text to the top */
+    color: #ffffff; /* Text color */
+    margin-top: 5px; /* Optional: margin from the top to ensure spacing */
+}
+
+#card {
+    cursor: pointer;
+}
