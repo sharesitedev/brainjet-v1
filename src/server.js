@@ -33,6 +33,11 @@ app.get('/', (req,res) => {
     res.render('home');
 })
 
+app.get('/learn/1v1', (req,res) => {
+  const p2 = fileURLToPath(new URL("views/games/1v1.lol/index.html", import.meta.url));
+  res.sendFile(p2);
+})
+
 // app.listen(PORT, () => {
 //     console.log(`BrainJet is up and running on port ${PORT}`);
 // })
