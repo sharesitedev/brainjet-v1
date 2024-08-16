@@ -33,9 +33,14 @@ app.get('/', (req,res) => {
     res.render('home');
 })
 
-app.get('/learn/1v1', (req,res) => {
-  const p2 = fileURLToPath(new URL("views/games/1v1.lol/index.html", import.meta.url));
-  res.sendFile(p2);
+app.get('/learn/:game', (req,res) => {
+  if (req.params.game === "1v1") {
+    const game = fileURLToPath(new URL("views/games/1v1.lol/index.html", import.meta.url));
+    res.sendFile(game);
+  } else if (req.params.game === "fall") {
+    const game = fileURLToPath(new URL("views/games/justfall/index.html", import.meta.url));
+    res.sendFile(game);
+  }
 })
 
 // app.listen(PORT, () => {

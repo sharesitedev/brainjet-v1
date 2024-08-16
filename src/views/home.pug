@@ -34,6 +34,20 @@ html(lang="en")
         opacity: 1;
         visibility: visible;
       }
+      .satisfaction-text {
+        color: #4c9ac7; /* Muted blue color */
+        font-weight: bold;
+        text-shadow: 0 0 2px #4c9ac7, 0 0 4px #4c9ac7, 0 0 6px #4c9ac7;
+        animation: glow 1.5s infinite alternate;
+      }
+      @keyframes glow {
+        0% {
+          text-shadow: 0 0 2px #4c9ac7, 0 0 4px #4c9ac7, 0 0 6px #4c9ac7;
+        }
+        100% {
+          text-shadow: 0 0 4px #4c9ac7, 0 0 6px #4c9ac7, 0 0 8px #4c9ac7;
+        }
+      }
   body
     nav.navbar.navbar-expand-lg.border-body(data-bs-theme='dark')
         .container-fluid
@@ -66,28 +80,53 @@ html(lang="en")
         //-         a.btn.btn-primary(href='https://1v1.lol') Play
         .tab-content
             #gamesContent
+                h4.text-center.mt-5.mb-3.satisfaction-text Screw the new ETHS policies
+                br
                 .row
                     .col
-                        a.btn#card(href='https://1v1.lol')
+                        .btn#card(onClick="window.location='/learn/1v1'")
                             .image-box
                                 img(src="imgs/1v1lol.png", alt="1v1.lol")
                             .c-title
                                 h5 1v1.lol
                                 p Play 1v1.lol with your friends
                     .col
-                        a.btn#card(href='https://1v1.lol')
+                        .btn.now#card
                             .image-box
-                                img(src="imgs/1v1lol.png", alt="1v1.lol")
+                                img(src="imgs/now.png", alt="now.gg")
                             .c-title
-                                h5 1v1.lol
-                                p Play 1v1.lol with your friends
+                                h5 now.gg
+                                p Online mobile game emulator
                     .col
-                        a.btn#card(href='https://1v1.lol')
+                        .btn.holeio#card
                             .image-box
-                                img(src="imgs/1v1lol.png", alt="1v1.lol")
+                                img(src="imgs/holeio.png", alt="hole.io")
                             .c-title
-                                h5 1v1.lol
-                                p Play 1v1.lol with your friends
+                                h5 hole.io
+                                p Eat a city or somth. Idk.
+                .row
+                    .col
+                        .btn.paperio#card
+                            .image-box
+                                img(src="imgs/paperio2.png", alt="paper.io")
+                            .c-title
+                                h5 paper.io
+                                p The CLASSIC time waster
+                h4.text-center.mt-5.mb-3.satisfaction-text More Soon
+                    //- .col
+                    //-     .btn.now#card
+                    //-         .image-box
+                    //-             img(src="imgs/now.png", alt="now.gg")
+                    //-         .c-title
+                    //-             h5 now.gg
+                    //-             p Online mobile game emulator
+                    //- .col
+                    //-     .btn.holeio#card
+                    //-         .image-box
+                    //-             img(src="imgs/holeio.png", alt="hole.io")
+                    //-         .c-title
+                    //-             h5 hole.io
+                    //-             p Eat a city or somth. Idk.
             #proxyContent.text-center
                 //- h1 yay proxy
                 img(src="imgs/pagego.png", alt="logo" width="300")#pagego
@@ -96,6 +135,7 @@ html(lang="en")
                 form#uv-form
                     input#uv-address.form-control(style='background-color:#ffffff23' type='text' placeholder='')
                     script(src='js/splashs.js')
+    <div class="customcontainer"><div class="bubbles"><span style="--i:11" class="b"></span><span style="--i:13" class="b"></span><span style="--i:18" class="b"></span><span style="--i:15" class="b"></span><span style="--i:18" class="b"></span><span style="--i:21" class="b"></span><span style="--i:9" class="b"></span><span style="--i:12" class="b"></span><span style="--i:11" class="b"></span><span style="--i:15" class="b"></span><i class="fa-solid fa-shuttle-space shuttle" style="--i: 14;" aria-hidden="true"></i><span style="--i:9" class="b"></span><span style="--i:19" class="b"></span><span style="--i:11" class="b"></span><i class="fa-solid fa-shuttle-space shuttle" style="--i: 8;" aria-hidden="true"></i><span style="--i:10" class="b"></span><span style="--i:15" class="b"></span><i class="fa-solid fa-shuttle-space shuttle" style="--i: 18;" aria-hidden="true"></i><span style="--i:22" class="b"></span><i class="fa-solid fa-shuttle-space shuttle" style="--i: 18;" aria-hidden="true"></i><span style="--i:14" class="b"></span><span style="--i:22" class="b"></span><span style="--i:22" class="b"></span><span style="--i:15" class="b"></span><span style="--i:11" class="b"></span><span style="--i:10" class="b"></span><i class="fa-solid fa-shuttle-space shuttle" style="--i: 13;" aria-hidden="true"></i><span style="--i:21" class="b"></span><span style="--i:10" class="b"></span><span style="--i:17" class="b"></span><span style="--i:19" class="b"></span><span style="--i:22 class="b""></span><span style="--i:9" class="b"></span><span style="--i:18" class="b"></span><span style="--i:12" class="b"></span><span style="--i:14" class="b"></span><span style="--i:23" class="b"></span><span style="--i:14" class="b"></span><span style="--i:14" class="b"></span><span style="--i:21" class="b"></span><span style="--i:19" class="b"></span><span style="--i:17" class="b"></span><span style="--i:15" class="b"></span><span style="--i:18" class="b"></span><span style="--i:12" class="b"></span><span style="--i:13" class="b"></span><span style="--i:14" class="b"></span><span style="--i:8" class="b"></span><span style="--i:10" class="b"></span><span style="--i:10" class="b"></span></div></div>
     script.
       function showTab(tabId) {
         // Hide all tab contents
@@ -126,4 +166,45 @@ html(lang="en")
 
       // Initialize the first tab as active
       showTab('proxyContent');
+    <script src="js/icons.js"></script>
+    script.
+      //- get rbx class and make an onclick event
+      document.querySelector('.now').addEventListener('click', async function() {
+        try {
+          await registerSW();
+        } catch (err) {
+          error.textContent = "Failed to register service worker.";
+          errorCode.textContent = err.toString();
+          throw err;
+        }
+
+        const url = search("https://now.gg/", "https://www.google.com/search?q=%s");
+        location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+      });
+
+      document.querySelector('.holeio').addEventListener('click', async function() {
+        try {
+          await registerSW();
+        } catch (err) {
+          error.textContent = "Failed to register service worker.";
+          errorCode.textContent = err.toString();
+          throw err;
+        }
+
+        const url = search("https://hole-io.com/", "https://www.google.com/search?q=%s");
+        location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+      });
+
+      document.querySelector('.paperio').addEventListener('click', async function() {
+        try {
+          await registerSW();
+        } catch (err) {
+          error.textContent = "Failed to register service worker.";
+          errorCode.textContent = err.toString();
+          throw err;
+        }
+
+        const url = search("https://paper-io.com/", "https://www.google.com/search?q=%s");
+        location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+      });
     script(src='index.js')

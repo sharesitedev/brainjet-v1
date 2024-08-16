@@ -96,5 +96,67 @@ body {
 }
 
 #pagego {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    margin: 20px 20px 20px 20px;
+}
+
+.customcontainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    z-index: -1;
+}
+
+.bubbles .b {
+    position: relative;
+    width: calc(100% / 50);;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50rem;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear;
+    z-index: -1;
+    animation-duration: calc(125s / var(--i));
+}
+
+.shuttle {
+    position: relative;
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 204));
+    animation: animateagain 15s linear;
+    z-index: -1;
+    animation-duration: calc(125s / var(--i));
+    rotate: -90deg;
+}
+
+.bubbles .b:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-50vh) scale(1)
+    }
+}
+@keyframes animateagain {
+    0% {
+        transform: translateX(-100vh);
+    }
+    100% {
+        transform: translateX(50vh)
+    }
 }
