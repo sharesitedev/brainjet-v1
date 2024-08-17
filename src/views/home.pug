@@ -60,9 +60,9 @@ html(lang="en")
                 #items.d-flex.justify-content-center.align-items-center
                     ul.navbar-nav.mb-2.mb-lg-0
                         li.nav-item
-                            a.nav-link.active(aria-current='page' href='#' id="proxyLink") Proxy
+                            a.nav-link.active(aria-current='page' href='#' id="proLink") Prȯxy
                         li.nav-item
-                            a.nav-link(href='#' id="gamesLink") Games
+                            a.nav-link(href='#' id="gaLink") Gámes
                 a.btn(href='https://discord.gg/homeworkhelp')#glow
                     i.fa-brands.fa-discord
                     |  Discord
@@ -79,7 +79,7 @@ html(lang="en")
         //-         p.card-text Play 1v1.lol with your friends
         //-         a.btn.btn-primary(href='https://1v1.lol') Play
         .tab-content
-            #gamesContent
+            #gaContent
                 h4.text-center.mt-5.mb-3.satisfaction-text Screw the new ETHS policies
                 br
                 .row
@@ -127,8 +127,7 @@ html(lang="en")
                     //-         .c-title
                     //-             h5 hole.io
                     //-             p Eat a city or somth. Idk.
-            #proxyContent.text-center
-                //- h1 yay proxy
+            #proContent.text-center
                 img(src="imgs/pagego.png", alt="logo" width="300")#pagego
                 .container
                     <p class="line-1 anim-typewriter">The site that &#x26CE;N&#x1F171;&#xFE0F;L&#x1F17E;C&#x1F1F0;S everything.</p>
@@ -154,18 +153,18 @@ html(lang="en")
       }
 
       // Add event listeners to tabs
-      document.getElementById('proxyLink').addEventListener('click', function(event) {
+      document.getElementById('proLink').addEventListener('click', function(event) {
         event.preventDefault();
-        showTab('proxyContent');
+        showTab('proContent');
       });
 
-      document.getElementById('gamesLink').addEventListener('click', function(event) {
+      document.getElementById('gaLink').addEventListener('click', function(event) {
         event.preventDefault();
-        showTab('gamesContent');
+        showTab('gaContent');
       });
 
       // Initialize the first tab as active
-      showTab('proxyContent');
+      showTab('proContent');
     <script src="js/icons.js"></script>
     script.
       //- get rbx class and make an onclick event

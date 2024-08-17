@@ -37,10 +37,10 @@ app.get('/', (req,res) => {
 
 app.get('/learn/:game', (req,res) => {
   if (req.params.game === "1v1") {
-    const game = fileURLToPath(new URL("views/games/1v1.lol/index.html", import.meta.url));
+    const game = fileURLToPath(new URL("views/gs/1v1.lol/index.html", import.meta.url));
     res.sendFile(game);
   } else if (req.params.game === "fall") {
-    const game = fileURLToPath(new URL("views/games/justfall/index.html", import.meta.url));
+    const game = fileURLToPath(new URL("views/gs/justfall/index.html", import.meta.url));
     res.sendFile(game);
   }
 })
