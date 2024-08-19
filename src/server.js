@@ -18,7 +18,7 @@ const bare = createBareServer("/bare/");
 const app = express();
 // const PORT = 8080;
 
-console.log("sigmafr3");
+console.log("sigmafr4");
 
 app.set('view engine', 'pug');
 app.set('views', p2);
