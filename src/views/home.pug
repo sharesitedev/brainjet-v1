@@ -113,6 +113,28 @@ html(lang="en")
                             .c-title
                                 h5 paper.io
                                 p The CLASSIC time waster
+                    .col
+                        .btn.twenty48#card
+                            .image-box
+                                img(src="imgs/twenty48.png", alt="2048")
+                            .c-title
+                                h5 2048
+                                p Great one. 10/10
+                    .col
+                        .btn.slope#card
+                            .image-box
+                                img(src="imgs/slope.png", alt="slope")
+                            .c-title
+                                h5 Slope
+                                p yes. slope.
+                .row
+                    .col
+                        .btn.doge#card
+                            .image-box
+                                img(src="imgs/doge.png", alt="paper.io")
+                            .c-title
+                                h5 Doge Miner
+                                p Mine doge coins bc yes.
                 h4.text-center.mt-5.mb-3.satisfaction-text More Soon
                     //- .col
                     //-     .btn.now#card
@@ -193,6 +215,43 @@ html(lang="en")
 
         const url = search("https://hole-io.com/", "https://www.google.com/search?q=%s");
         location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+      });
+
+      document.querySelector('.twenty48').addEventListener('click', async function() {
+        try {
+          await registerSW();
+        } catch (err) {
+          error.textContent = "Failed to register service worker.";
+          errorCode.textContent = err.toString();
+          throw err;
+        }
+
+        const url = search("https://ovolve.github.io/2048-AI/", "https://www.google.com/search?q=%s");
+        location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+      });
+
+      document.querySelector('.slope').addEventListener('click', async function() {
+        try {
+          await registerSW();
+        } catch (err) {
+          error.textContent = "Failed to register service worker.";
+          errorCode.textContent = err.toString();
+          throw err;
+        }
+
+        window.location = "http://brainjet.net/uv/service/hvtrs8%2F-gcmgs%2Cari%2Ctolcbq.mng%2Feaoeq%2Fqlmpg%2F"
+      });
+
+      document.querySelector('.doge').addEventListener('click', async function() {
+        try {
+          await registerSW();
+        } catch (err) {
+          error.textContent = "Failed to register service worker.";
+          errorCode.textContent = err.toString();
+          throw err;
+        }
+
+        window.location = "http://brainjet.net/uv/service/hvtrs8%2F-gcmgs%2Cari%2Ctolcbq.mng%2Feaoeq%2FFoeeOilep%2F"
       });
 
       document.querySelector('.paperio').addEventListener('click', async function() {
