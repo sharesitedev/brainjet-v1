@@ -82,6 +82,37 @@ html(lang="en")
         .tab-content
             #gaContent
                 h4.text-center.mt-5.mb-3.satisfaction-text Screw the new ETHS policies
+                br
+                .row
+                    .col
+                        .btn#card(onClick="window.location='/learn/1v1'")
+                            .image-box
+                                img(src="imgs/1lol.png")
+                            .c-title
+                                h5 1ν1.ӏol
+                                p Click this. Very amaze!
+                    .col
+                        .btn.now#card
+                            .image-box
+                                img(src="imgs/now.png")
+                            .c-title
+                                h5 	ոow.ġġ
+                                p Go play some educational games!
+                    .col
+                        .btn.hoio#card
+                            .image-box
+                                img(src="imgs/hoio.png")
+                            .c-title
+                                h5 һoӏe.іȯ
+                                p Eat a city or somth. Idk.
+                .row
+                    .col
+                        .btn.papio#card
+                            .image-box
+                                img(src="imgs/papio.png")
+                            .c-title
+                                h5 рaрer.іȯ
+                                p The CLASSIC
                 h4.text-center.mt-5.mb-3.satisfaction-text More Soon
                     //- .col
                     //-     .btn.now#card
@@ -151,7 +182,7 @@ html(lang="en")
         location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
       });
 
-      document.querySelector('.holeio').addEventListener('click', async function() {
+      document.querySelector('.hoio').addEventListener('click', async function() {
         try {
           await registerSW();
         } catch (err) {
@@ -164,44 +195,7 @@ html(lang="en")
         location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
       });
 
-      document.querySelector('.twenty48').addEventListener('click', async function() {
-        try {
-          await registerSW();
-        } catch (err) {
-          error.textContent = "Failed to register service worker.";
-          errorCode.textContent = err.toString();
-          throw err;
-        }
-
-        const url = search("https://ovolve.github.io/2048-AI/", "https://www.google.com/search?q=%s");
-        location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-      });
-
-      document.querySelector('.slope').addEventListener('click', async function() {
-        try {
-          await registerSW();
-        } catch (err) {
-          error.textContent = "Failed to register service worker.";
-          errorCode.textContent = err.toString();
-          throw err;
-        }
-
-        window.location = "http://brainjet.net/uv/service/hvtrs8%2F-gcmgs%2Cari%2Ctolcbq.mng%2Feaoeq%2Fqlmpg%2F"
-      });
-
-      document.querySelector('.doge').addEventListener('click', async function() {
-        try {
-          await registerSW();
-        } catch (err) {
-          error.textContent = "Failed to register service worker.";
-          errorCode.textContent = err.toString();
-          throw err;
-        }
-
-        window.location = "http://brainjet.net/uv/service/hvtrs8%2F-gcmgs%2Cari%2Ctolcbq.mng%2Feaoeq%2FFoeeOilep%2F"
-      });
-
-      document.querySelector('.paperio').addEventListener('click', async function() {
+      document.querySelector('.papio').addEventListener('click', async function() {
         try {
           await registerSW();
         } catch (err) {
